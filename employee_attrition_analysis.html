@@ -7509,7 +7509,89 @@ a.anchor-link {
 </style>
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=488abc64-3449-403c-a458-00d982476983">
+<main>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=416dfc88-b2d6-44c2-b064-0d3652697438">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Employee-Attrition-Analysis-and-Retention-Strategy">Employee Attrition Analysis and Retention Strategy<a class="anchor-link" href="#Employee-Attrition-Analysis-and-Retention-Strategy">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=78ab5894-b4ab-4537-90c8-394fcfe64d5d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="1.0-Introduction">1.0 Introduction<a class="anchor-link" href="#1.0-Introduction">¶</a></h2><p>This analysis is based on the <a href="https://www.kaggle.com/datasets/jacksonchou/hr-data-for-analytics">HR Data for Analytics dataset on Kaggle</a> on Kaggle, which contains employee profiles from a large company. Each record represents one employee and includes features such as satisfaction level, performance evaluation, workload, salary level, and promotion history. Through exploratory data analysis, hypothesis testing, and logistic regression modeling, this analysis identifies key drivers of employee attrition and offers data-driven retention strategy recommendations.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=11adc265-77da-4d89-9134-a9b5c5abf86c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>satisfaction_level</td>
+<td>Employee-reported job satisfaction level [0–1]</td>
+</tr>
+<tr>
+<td>last_evaluation</td>
+<td>Score of employee's last performance review [0–1]</td>
+</tr>
+<tr>
+<td>number_project</td>
+<td>Number of projects employee contributes to</td>
+</tr>
+<tr>
+<td>average_monthly_hours</td>
+<td>Average number of hours employee worked per month</td>
+</tr>
+<tr>
+<td>time_spend_company</td>
+<td>How long the employee has been with the company (years)</td>
+</tr>
+<tr>
+<td>Work_accident</td>
+<td>Whether or not the employee experienced an accident while at work</td>
+</tr>
+<tr>
+<td>left</td>
+<td>Whether or not the employee left the company</td>
+</tr>
+<tr>
+<td>promotion_last_5years</td>
+<td>Whether or not the employee was promoted in the last 5 years</td>
+</tr>
+<tr>
+<td>sales</td>
+<td>The employee's department</td>
+</tr>
+<tr>
+<td>salary</td>
+<td>The employee's salary (U.S. dollars)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=488abc64-3449-403c-a458-00d982476983">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7665,73 +7747,13 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=11adc265-77da-4d89-9134-a9b5c5abf86c">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<table>
-<thead>
-<tr>
-<th>Variable</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>satisfaction_level</td>
-<td>Employee-reported job satisfaction level [0–1]</td>
-</tr>
-<tr>
-<td>last_evaluation</td>
-<td>Score of employee's last performance review [0–1]</td>
-</tr>
-<tr>
-<td>number_project</td>
-<td>Number of projects employee contributes to</td>
-</tr>
-<tr>
-<td>average_monthly_hours</td>
-<td>Average number of hours employee worked per month</td>
-</tr>
-<tr>
-<td>time_spend_company</td>
-<td>How long the employee has been with the company (years)</td>
-</tr>
-<tr>
-<td>Work_accident</td>
-<td>Whether or not the employee experienced an accident while at work</td>
-</tr>
-<tr>
-<td>left</td>
-<td>Whether or not the employee left the company</td>
-</tr>
-<tr>
-<td>promotion_last_5years</td>
-<td>Whether or not the employee was promoted in the last 5 years</td>
-</tr>
-<tr>
-<td>sales</td>
-<td>The employee's department</td>
-</tr>
-<tr>
-<td>salary</td>
-<td>The employee's salary (U.S. dollars)</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6760795f-fb8a-432a-b6e8-6fc51219d6cd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="1.0-Initial-Data-Exploration-and-Data-Cleaning">1.0 Initial Data Exploration and Data Cleaning<a class="anchor-link" href="#1.0-Initial-Data-Exploration-and-Data-Cleaning">¶</a></h2>
+<h2 id="2.0-Initial-Data-Exploration-and-Data-Cleaning">2.0 Initial Data Exploration and Data Cleaning<a class="anchor-link" href="#2.0-Initial-Data-Exploration-and-Data-Cleaning">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8609,7 +8631,7 @@ Expected number of such rows: 0.00
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="1.1-Summary-of-Initial-Exploration-and-Cleaning">1.1 Summary of Initial Exploration and Cleaning<a class="anchor-link" href="#1.1-Summary-of-Initial-Exploration-and-Cleaning">¶</a></h3><ol>
+<h3 id="2.1-Summary-of-Initial-Exploration-and-Cleaning">2.1 Summary of Initial Exploration and Cleaning<a class="anchor-link" href="#2.1-Summary-of-Initial-Exploration-and-Cleaning">¶</a></h3><ol>
 <li>Renaming columns: based on the business meanings of columns, some columns are renamed, such as "sales" looks like a typo and is renamed to "department"; some columns are renamed to match the "snake_case".</li>
 <li>Checking missing values: no missing values and all columns have 14,999 records.</li>
 <li>Checking abnormal values: based on the understanding of business meanings of each column check the column values, for example, <code>satisfaction_level</code> and <code>last_evaluation</code> should only contain values between 0 and 1. No abnormal values.</li>
@@ -8625,7 +8647,7 @@ Expected number of such rows: 0.00
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="2.0-Attrition-Rate-Analysis">2.0 Attrition Rate Analysis<a class="anchor-link" href="#2.0-Attrition-Rate-Analysis">¶</a></h2>
+<h2 id="3.0-Attrition-Rate-Analysis">3.0 Attrition Rate Analysis<a class="anchor-link" href="#3.0-Attrition-Rate-Analysis">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8689,7 +8711,7 @@ Turnover rate:             16.60%
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="2.1-Employee-Distribution-by-Tenure-and-Attrition-Rate">2.1 Employee Distribution by Tenure and Attrition Rate<a class="anchor-link" href="#2.1-Employee-Distribution-by-Tenure-and-Attrition-Rate">¶</a></h3>
+<h3 id="3.1-Employee-Distribution-by-Tenure-and-Attrition-Rate">3.1 Employee Distribution by Tenure and Attrition Rate<a class="anchor-link" href="#3.1-Employee-Distribution-by-Tenure-and-Attrition-Rate">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8816,7 +8838,7 @@ Turnover rate:             16.60%
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="2.1.1-Hypothesis-Testing-on-Tenure-Groups">2.1.1 Hypothesis Testing on Tenure Groups<a class="anchor-link" href="#2.1.1-Hypothesis-Testing-on-Tenure-Groups">¶</a></h4><p>To further analyze the relation between tenure and employee status, we can perform a hypothesis test.</p>
+<h4 id="3.1.1-Hypothesis-Testing-on-Tenure-Groups">3.1.1 Hypothesis Testing on Tenure Groups<a class="anchor-link" href="#3.1.1-Hypothesis-Testing-on-Tenure-Groups">¶</a></h4><p>To further analyze the relation between tenure and employee status, we can perform a hypothesis test.</p>
 <p>$ H_0 $: There is no significant difference in attrition rate among different tenure groups<br/>
 $ H_A $: There is a significant difference in attrition rate among different tenure groups</p>
 </div>
@@ -8882,7 +8904,7 @@ $ H_A $: There is a significant difference in attrition rate among different ten
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="2.2-Further-exploration-on-the-3-to-5-year-tenure-group">2.2 Further exploration on the 3-to-5-year tenure group<a class="anchor-link" href="#2.2-Further-exploration-on-the-3-to-5-year-tenure-group">¶</a></h3>
+<h3 id="3.2-Further-exploration-on-the-3-to-5-year-tenure-group">3.2 Further exploration on the 3-to-5-year tenure group<a class="anchor-link" href="#3.2-Further-exploration-on-the-3-to-5-year-tenure-group">¶</a></h3>
 </div>
 </div>
 </div>
@@ -9256,7 +9278,7 @@ $ H_A $: There is a significant difference in attrition rate among different ten
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="2.2.1-Hypothesis-Testing-on-3-5-years-Tenure-Groups">2.2.1 Hypothesis Testing on 3-5 years Tenure Groups<a class="anchor-link" href="#2.2.1-Hypothesis-Testing-on-3-5-years-Tenure-Groups">¶</a></h4>
+<h4 id="3.2.1-Hypothesis-Testing-on-3-5-years-Tenure-Groups">3.2.1 Hypothesis Testing on 3-5 years Tenure Groups<a class="anchor-link" href="#3.2.1-Hypothesis-Testing-on-3-5-years-Tenure-Groups">¶</a></h4>
 </div>
 </div>
 </div>
@@ -9424,7 +9446,7 @@ promotion_last_5years - p-value: 0.0000 | Significant
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="2.3-Departments-and-Attrition-Rate">2.3 Departments and Attrition Rate<a class="anchor-link" href="#2.3-Departments-and-Attrition-Rate">¶</a></h3>
+<h3 id="3.3-Departments-and-Attrition-Rate">3.3 Departments and Attrition Rate<a class="anchor-link" href="#3.3-Departments-and-Attrition-Rate">¶</a></h3>
 </div>
 </div>
 </div>
@@ -9696,7 +9718,7 @@ In this section, we analyze attrition at the department level for all employees,
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="3.0-Logistic-Regression-on-Attrition-Drivers">3.0 Logistic Regression on Attrition Drivers<a class="anchor-link" href="#3.0-Logistic-Regression-on-Attrition-Drivers">¶</a></h2>
+<h2 id="4.0-Logistic-Regression-on-Attrition-Drivers">4.0 Logistic Regression on Attrition Drivers<a class="anchor-link" href="#4.0-Logistic-Regression-on-Attrition-Drivers">¶</a></h2>
 </div>
 </div>
 </div>
@@ -9852,7 +9874,7 @@ department_technical       0.4072      0.140      2.911      0.004       0.133  
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="4.0-Data-Driven-Recommendations">4.0 Data-Driven Recommendations<a class="anchor-link" href="#4.0-Data-Driven-Recommendations">¶</a></h2>
+<h2 id="5.0-Data-Driven-Recommendations">5.0 Data-Driven Recommendations<a class="anchor-link" href="#5.0-Data-Driven-Recommendations">¶</a></h2>
 </div>
 </div>
 </div>
